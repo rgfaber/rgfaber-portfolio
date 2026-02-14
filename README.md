@@ -1,12 +1,12 @@
 # R.G. Lefever
 
-Four decades of building software. Currently: three open-source ecosystems, one coherent stack, zero compromises.
+Four decades of building software. Currently: four open-source ecosystems, one coherent stack, zero compromises.
 
 ## About
 
 Started on a ZX81 in the early 80s. Went professional in the early 90s. Forty years later, I'm still writing code — I just got considerably better at knowing what not to write.
 
-I build event-sourced, distributed systems in Erlang/OTP, with Rust where speed matters and Go where humans have to look at it. Most people reach for a database and a framework. I built both, then built a network layer, then built a developer studio on top.
+I build event-sourced, distributed systems in Erlang/OTP, with Rust where speed matters and Go where humans have to look at it. Most people reach for a database and a framework. I built both, then built a network layer, then built a developer studio on top. Then I taught neural networks to evolve themselves.
 
 Based in Leuven, Belgium. Working through [DisComCo sp.z.o.o](https://discomco.pl). Ham radio callsign SP8RL.
 
@@ -30,19 +30,27 @@ AI-powered developer studio. An Erlang daemon handles event sourcing, mesh integ
 
 **Erlang, Go, Bubble Tea, Multi-LLM** | [hecate-social](https://github.com/hecate-social) | 12 repos
 
+### Faber
+
+Neuroevolution on the BEAM. A TWEANN engine with Liquid Time-Constant neurons that evolve their own topology and weights. Population-based training, multi-objective fitness, speciation — neural networks that design themselves. Optional Rust NIFs for 10-200x acceleration. Built on Gene Sher's DXNN2 research, rewritten from scratch.
+
+*Faber: Latin for maker. It's been my name the whole time.*
+
+**Erlang, Rust NIFs, Mnesia, NEAT/TWEANN** | [rgfaber](https://github.com/rgfaber) | 6 repos
+
 ## The Stack
 
 ```
   Hecate        developer experience, AI agents
     |
   Macula        mesh networking, P2P distribution
-    |
-  ReckonDB      event sourcing, CQRS, persistence
+    |       \
+  ReckonDB   Faber       event sourcing / neuroevolution
 ```
 
-ReckonDB provides the event sourcing infrastructure that both Macula and Hecate build on. Macula provides the distributed network layer that Hecate uses to connect developer agents across nodes. Hecate is the interface layer where developers interact with the whole stack.
+ReckonDB provides the event sourcing infrastructure that both Macula and Hecate build on. Macula provides the distributed network layer that Hecate uses to connect developer agents across nodes. Hecate is the interface layer where developers interact with the whole stack. Faber provides the computational intelligence — neural networks that evolve on the BEAM, optionally distributed across the Macula mesh.
 
-Each ecosystem stands on its own. Together they form a vertically integrated platform for building distributed, event-sourced, AI-assisted applications on the BEAM. 63 repos across 3 organizations, spanning Erlang, Rust, Go, and Svelte. One person, one vision.
+Each ecosystem stands on its own. Together they form a vertically integrated platform for building distributed, event-sourced, AI-assisted applications on the BEAM. 69 repos across 4 ecosystems, spanning Erlang, Rust, Go, and Svelte. One person, one vision.
 
 ## Links
 
